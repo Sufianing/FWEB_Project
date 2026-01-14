@@ -1,0 +1,12 @@
+.sb-hero {
+  background: radial-gradient(1200px 600px at 10% 10%, rgba(13,110,253,0.20), transparent),
+              radial-gradient(900px 500px at 90% 20%, rgba(25,135,84,0.18), transparent);
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.sb-thumb {
+  width: 80px;
+  height: 110px;
+  flex-shrink: 0;
+}
+

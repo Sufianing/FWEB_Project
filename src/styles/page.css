@@ -1,0 +1,29 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.sb-shell {
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+}
+
+.sb-page {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.sb-main {
+  width: 100%;
+  padding: 24px 0;
+}
+
+.sb-hero {
+  width: 100%;
+}
