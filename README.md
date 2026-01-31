@@ -1,16 +1,34 @@
-# React + Vite
+# SunnyBooks Frontend (FWEB_Project)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the frontend for the SunnyBooks system.  
+It is built using React and Vite.
 
-Currently, two official plugins are available:
+The frontend communicates with the backend through REST APIs.  
+The backend URL is configured using environment variables.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project follows DevOps and GitOps practices.  
+The frontend is connected to GitHub and deployed on Vercel.
 
-## React Compiler
+When code is pushed to the `main` branch:
+- GitHub Actions runs a CI pipeline
+- Dependencies are installed
+- The project is built
+- Vercel automatically deploys the latest version
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+No manual deployment is required.
 
-## Expanding the ESLint configuration
+GitHub is the single source of truth.  
+All deployments are triggered by Git commits.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The frontend is live at:  
+https://my-repository-3albz8v48-sufians-projects-62efa871.vercel.app/login
+
+Environment variables are managed in Vercel and not committed to GitHub.  
+This includes the backend API URL.
+
+Technologies used:
+- React
+- Vite
+- Axios
+- GitHub Actions
+- Vercel
