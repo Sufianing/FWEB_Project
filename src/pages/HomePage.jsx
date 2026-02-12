@@ -47,7 +47,7 @@ function HomePage() {
     <div>
       <div className="p-4 p-md-5 mb-4 rounded-3 sb-hero">
         <div className="py-2">
-          <h1 className="display-6 fw-bold mb-2">Let's find your next book</h1>
+          <h1 className="display-6 fw-bold mb-2">Find your next book</h1>
           <p className="fs-6 text-secondary mb-4" style={{ maxWidth: 720 }}>
             Search by title, author, category, or ISBN.
           </p>
